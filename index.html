@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1">
+    <title>meetscookie</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"><img src="img/rogo.png" alt="TAG index" border="0"></a>
+        <!-- <img src="img/rogo.png" > -->
+      </div>
+
+      <div class="pc-menu">
+        <nav>
+          <ul>
+            <li><a href="https://meetscookie.wixsite.com/meets-cookie">about</a></li>
+            <li><a href="https://thebase.com/inquiry/meetscookie-base-shop"target="_blank">contact</a></li>
+            <li><a href="https://meetscookie.wixsite.com/meets-cookie/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E5%8F%97%E4%BB%98">order</a></li>
+            <li><a href="https://meetscookie.base.shop/"target="_blank">shop</a></li>
+            <li><a href="https://meetscookie.wixsite.com/meets-cookie">gallery</a></li>
+            <a href="https://www.instagram.com/meetscookie/"target="_blank"><img src="img/Sin.png" alt="TAG index" border="0"></a>
+
+            <a href="https://x.com/meetscookie"target="_blank"><img src="img/Stwitter.png" alt="TAG index" border="0"></a>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sp-menu">
+        <span class="material-icons md-blue" id="open">menu</span>
+      </div>
+
+      <div class="overlay">
+        <span class="material-icons md-blue" id="close">close</span>
+        <nav>
+          <ul>
+            <li><a href="https://meetscookie.wixsite.com/meets-cookie">about</a></li>
+            <li><a href="https://thebase.com/inquiry/meetscookie-base-shop"target="_blank">contact</a></li>
+            <li><a href="https://meetscookie.wixsite.com/meets-cookie/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E5%8F%97%E4%BB%98">order</a></li>
+            <li><a href="https://meetscookie.base.shop/"target="_blank">shop</a></li>
+            <li><a href="https://meetscookie.wixsite.com/meets-cookie">gallery</a></li> 
+            <li><a href="https://www.instagram.com/meetscookie/"target="_blank">Instagram</a></li> 
+            <li><a href="https://x.com/meetscookie"target="_blank">twitter</a></li>              
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="sampleimage">
+      <IMG src="img/sentaku.png" style="display: block; margin:auto;" name="imgsmp">
+    </div>
+
+    <form action="#" name="orderform">
+      <div class="back">
+        <div class="base1 base2">
+
+          <label for="Base">オーダー内容</label>
+          <select name="goods1" id="Base" onChange="changebox(); keisan(); imgChange();">
+            <option value="none" disabled>選択してください</option>
+            <option value="complex_adjust">複雑イラスト 調整必要 +12,000yen</option>
+            <option value="simple_adjust">シンプルイラスト 調整必要 +7,300yen</option>
+            <option value="no_adjust">イラスト調整なし(1/1線幅1mm) +6,100yen</option>
+            <option value="ai_data">データ入稿(Adobe Illustratorのみ、1/1線幅1mm) +5,000yen</option>
+            <option value="multi_illust">イラスト複数 要相談</option>
+            <option value="many">クッキー型量産 要相談</option>
+          </select>
+
+          <label for="Size">出力サイズ</label>
+          <select name="goods3" id="Size" onChange="changebox(); keisan(); imgChange();">
+            <option value="none" disabled>選択してください</option>
+            <option value="S">~6cm +700yen</option>
+            <option value="M">7~8cm +1,100yen</option>
+            <option value="L">9~10cm +1,500yen</option>
+            <option value="XL">11cmを超える場合要相談</option>
+          </select>
+
+          <label for="SNS">SNS</label>
+          <select name="goods6" id="SNS" onChange="changebox(); keisan(); imgChange();">
+            <option value="OK">記載OK</option>
+            <option value="NG">記載NG</option>
+          </select>
+
+        </div>
+      
+
+        <div class="goukeichi">
+          <input type="text" name="field_total" size="8" value="0"readonly style="text-align:right;">
+        </div>
+
+        <div class="souryou">
+          <p>(送料/税込み)</p>
+        </div>
+        <!-- align="right" -->
+
+        <!-- <div class = "yonde" >
+          <p>
+            ■お見積りと著作権について<br>
+            参考のお値段としてご利用ください。
+            詳細なお見積りはメールでお問い合わせください
+            お安くなる、お高くなる場合がございますのでご承知ください。<br>
+            著作権がある場合は許可済みの物しかお受けできません。<br>
+            <br>
+            ■個人情報について<br>
+            ご依頼主様の個人情報（住所・氏名・メールアドレス）が外部に漏洩することのないよう管理しております。
+            これらの情報を第三者に譲渡することは一切ございません
+            尚、裁判所・警察機関など公的な機関からの提出要請があった場合はこの限りではありません。<br>
+            <br>
+            ■個人情報の利用目的<br>
+            お客さまからお預かりした個人情報は、以下の目的で利用いたします。<br>
+            ①注文受付、発送、作成に関するご連絡<br>
+            ②ご質問に対する回答<br>
+            ③作品発送<br>
+            ④その他、各種挨拶状、お礼状等の送付及び送信をするため<br>
+            <br>
+            ■作品の返品、お直しに関して<br>
+            作品が不良品の場合、または誤配送の場合のみ、返品をお受けいたします。
+            ご依頼主様都合での作品の返品は承れません。あらかじめご了承ください。
+            また、一緒に生活していく中でほつれなどがございましたらお気軽にご連絡ください。
+          </p>
+        </div> -->
+      </form>
+
+      <form action="##" name="form2">
+        <!--<button onclick="zoopi()">同意</button>-->
+        <!-- <hr class="line"> -->
+        <div class="mail">
+          <button type="button" id="btn_mail"  onclick="write_mail()" >メール</button>
+        </div>
+        <div class="copy">
+          <button type="button" id="btn_copy">Copy</button>
+          <p>ベース選択後メールボタンがうまく動作しない人はcopyボタンを押して<br>
+            meetscookie@gmail.comあてにcopyした内容を張り付けてお見積りのご相談ください。</p>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <footer>
+      <p>meetscookie@gmail.com</p><br>
+      <a href="https://www.instagram.com/meetscookie/"target="_blank"><img src="img/in.png" alt="TAG index" border="0"></a>
+      <a href="https://x.com/meetscookie"target="_blank"><img src="img/twitter.png" alt="TAG index" border="0"></a>
+    </footer>
+
+  </body>
+</html>
