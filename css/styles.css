@@ -1,0 +1,482 @@
+body {
+  margin: 0;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: normal
+  }
+  nav a{
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-decoration: none;
+      color: #2E4BA3;
+      font-weight: bold;
+      display: block;
+      font-size: 16px;
+  }
+
+#sampleimage{
+  margin: 0;
+  /* background: -moz-linear-gradient(top, rgba(255, 246, 244, 1),rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(top, rgba(255, 246, 244, 1),rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgba(255, 246, 244, 1),rgba(0, 0, 0, 0)); */
+  background-color: #FFFBF0 ;
+  color: #6277B6;
+  position: fixed;
+  z-index: 1;
+  
+  width: 100%;
+  padding-top: 100px;
+}
+
+
+.back{
+  margin: 0;
+  padding: 10px 30px 20px 30px;
+  background-color: #FFFBF0;
+  color: #6277B6;
+  padding-top: 330px;
+}
+
+.yonde{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 3px 8px 3px 12px;
+  height: 250px; 
+  width: 80%;
+  background-color: white;
+  border: 2px solid #6277B6;
+  overflow-y: scroll;
+  border-radius: 8px;
+}
+
+.yonde::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E4BA3;
+  border-radius: 5px;
+}
+
+
+
+select{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-decoration: none;
+  background:#6277B6;
+  color:#6277B6;
+  border: 2px solid #6277B6;
+  padding: 5px 20px 0 20px;
+  line-height: 50px;
+  display: block;
+  font-size: 15px;
+  width: 95%;
+  margin-bottom: 13px;
+}
+
+.base1{
+  overflow: hidden;
+	width: 70%;
+	margin: 2em auto;
+	text-align: left;
+}
+.base1 select{
+  width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+  outline: none;
+	/* border: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none; */
+ 
+	background-size: 20px, 100%;
+	padding: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #6277B6;
+	background: url(arrow.png) right 50% no-repeat, 
+  linear-gradient(to bottom, #6277B6 0%,#6277B6 100%);
+	background: url(arrow.png) right 50% no-repeat, linear-gradient(to bottom,#6277B6);
+	background-size: 25px, 100%;
+}
+
+/* .base1 select::-ms-expand {
+  display: none;
+} */
+
+.base1 .base2 {
+	position: relative;
+	border-radius: 2px;
+	border: 2px solid #6277B6;
+	/*background: #6277B6;*/
+}
+/* .base1.base2::before {
+	position: absolute;
+	top: 25.5em;
+	right: 17em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #da3c41;
+	pointer-events: none;
+} */
+
+.base1.base2 select {
+  padding: 0px 20px 0 20px;
+	color: #FFFBF0;
+}
+
+select:disabled{
+  background: #C1CDEA;
+  border: 2px solid #C1CDEA;
+  color: #FFFBF0;
+  pointer-events: none;
+}
+
+
+option{
+  color: #2E4BA3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.goukeichi{
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 20px;
+  text-align : center ; 
+}
+/* td{
+  font-family: 'Baloo Tammudu 2', cursive;
+  text-align: center;
+  margin: 0 auto;
+} */
+
+
+
+
+
+input {
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-weight: 600;
+  padding: 0px 0px 0px 0px; /*ボックスを大きくする*/
+  font-size: 25px;
+  background-color: #FFFBF0;
+  border: none; /*枠線*/
+  
+ color: #2E4BA3; 
+  border-bottom: 2px solid #2E4BA3; /*text3の下線*/
+  overflow: hidden;
+	width: 70%;
+ 
+
+}
+
+
+
+
+/* th {
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 5px 10px 0;
+  margin-top: 15px;
+  font-size: 18px;
+} */
+
+.logo img {
+  margin: 0;
+  height: 90px;
+  display: block;
+  margin-left: 15px;
+}
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: rgba(255, 255, 255, 1.00);
+  z-index: 3;
+}
+.sp-menu {
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+.sp-menu #open{
+  font-size: 40px;
+  line-height: 90px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide{
+  display: none;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+nav a{
+  text-decoration: none;
+    color: #6277B6;
+    font-weight: bold;
+    display: block;
+}
+
+.overlay.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close{
+  position: absolute;
+  font-size: 40px;
+  top: 25px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.overlay ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li{
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1){
+  transition-delay: .1s;
+}
+.overlay.show li:nth-child(2){
+  transition-delay: .2s;
+}
+.overlay.show li:nth-child(3){
+  transition-delay: .3s;
+}
+.overlay.show li:nth-child(4){
+  transition-delay: .4s;
+}
+.overlay.show li:nth-child(5){
+  transition-delay: .5s;
+}
+.overlay.show li:nth-child(6){
+  transition-delay: .6s;
+}
+.overlay.show li:nth-child(7){
+  transition-delay: .7s;
+}
+
+.pc-menu {
+  display: none;
+}
+
+
+button{
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  text-decoration: none;
+  text-align: center;
+  background:#2E4BA3;
+  color:white;
+  border:none;
+  padding: 4px 30px 0;
+  line-height: 50px;
+  margin: 0 auto;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+button:hover{
+  background:#21387c;
+  color:rgb(184, 184, 184);
+  transition: background .5s;
+}
+
+.mail button{
+  background:#2E4BA3;
+  color:white;
+  transition: background .5s;
+}
+
+.mail button:hover{
+  background:#172858;
+  color:rgb(187, 187, 187);
+  
+}
+
+.copy button{
+  background:#a7a7a7;
+  color:white;
+}
+.copy button:hover{
+  background:#888888;
+  color:white;
+  transition: background .5s;
+}
+
+.copy p{
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+/* .line{
+  border-bottom: 1px solid  #c2c2c2;
+  height: 0%;
+  margin-bottom: 30px;
+  }
+   */
+
+footer {
+  font-family: 'Baloo Tammudu 2', cursive;
+  margin: 0;
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #FFFBF0;
+  color: #2E4BA3;
+  line-height: 10px;
+  font-size: 18px;
+}
+footer img {
+  width: 50px;
+  padding: 5px 8px;
+}
+
+
+label{
+  list-style-type: none;
+  font-family: 'Baloo Tammudu 2', cursive;
+  padding: 50px 0px 0px 0px ;
+  line-height: 50px;
+  font-size: 19px;
+  padding-top: 50px;
+  text-align: end;
+  padding-top: 13px;
+}
+
+button[type="button"][disabled]{
+  /*background:#FFFBF0;*/
+  cursor:not-allowed; /* 禁止カーソル */
+}
+
+#button2[type="button"][disabled]{
+  background:#bbbbbb;
+  cursor:not-allowed; /* 禁止カーソル */
+}
+
+.souryou{
+  font-family: 'Kiwi Maru', serif;
+  margin-bottom: 50px;
+  /* position: relative;
+  left:60%; */
+  text-align: center;
+}
+
+.mail button{
+  background: #2E4BA3;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  padding: 0px 0px;
+}
+
+
+
+
+@media (min-width: 800px) {
+  .pc-menu {
+    display: block;
+    margin-left: auto;
+  }
+
+  .pc-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .pc-menu a {
+    display: block;
+    width: 80px;
+    line-height: 100px;
+    text-align: center;
+  }
+  .pc-menu img {
+    margin: 0;
+    padding: 32px 0px 0px 0px;
+    width: 30px;
+  }
+
+  .sp-menu{
+    display: none;
+  }
+
+  footer img {
+    width: 40px;
+    padding: 5px 8px;
+  }
+
+  .base1{
+    overflow: hidden;
+    width: 500px;
+    margin: 2em auto;
+    text-align: left;
+  }
+
+  .yonde{
+    width: 500px;
+  }
+
+  input {
+    width: 500px;
+  }
+
+  #sampleimage{
+    margin: 0;
+    /* background: -moz-linear-gradient(top, rgba(255, 246, 244, 1),rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(top, rgba(255, 246, 244, 1),rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(255, 246, 244, 1),rgba(0, 0, 0, 0)); */
+    background-color: #FFFBF0 ;
+    color: rgb(109, 109, 109);
+  
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding-top: 130px;
+  }
+}
+
+.material-icons.md-blue {
+  color: #6277B6;
+}
